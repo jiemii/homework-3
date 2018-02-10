@@ -1,0 +1,11 @@
+
+function setup() { 
+  createCanvas(400, 400);
+} 
+for (var i = 20; i <= 320; i = i + 10) {
+  var startX = 480;
+  var startY = i;
+  var endX = 0;
+  var endY = i;
+  line(startX, startY, endX, endY);
+}
