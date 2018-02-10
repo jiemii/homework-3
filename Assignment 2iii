@@ -1,0 +1,12 @@
+
+function setup() { 
+  createCanvas(400, 400);
+}  
+for (var i = 20; i <= 320; i = i + 10) {
+  noFill();
+  var startX = 170;
+  var startY = 170;
+  var endX = i;
+  var endY = i;
+  ellipse(startX, startY, endX, endY);
+}
