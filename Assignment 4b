@@ -1,0 +1,36 @@
+Q4b
+function setup() { 
+  createCanvas(400, 400);
+} 
+
+var diameter = 10;
+
+function draw() { 
+  if (mouseIsPressed) {
+		if (key == '1') {
+			diameter = 10;
+		} else if (key == '2') {
+			diameter = 20;
+		} else if (key == '3') {
+			diameter = 30;
+		}
+    ellipse(mouseX, mouseY, diameter);
+  }
+}
+
+function keyPressed() {
+  print(key);
+  if (key == 'R') {
+    fill(200, 10, 70);
+  } else if (key == 'G') {
+    fill(55, 200, 0);
+  } else if (key == 'B') {
+    fill(50, 100, 200); 
+  } else if (key == 'Y') {
+    fill(250, 100, 0); 
+  } else if (key == 'P') {
+    fill(150, 10, 200); 
+  } else if (key == 'L') {
+    fill(0, 230, 230); 	
+  }
+}
